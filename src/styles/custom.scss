@@ -1,0 +1,9 @@
+// Import variabel Bootstrap untuk override sebelum utilities
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+// Override variabel (jika perlu)
+
+// Import komponen Bootstrap
+
+@import "bootstrap/scss/bootstrap";

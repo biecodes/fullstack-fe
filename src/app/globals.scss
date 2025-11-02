@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+    sans-serif, Helvetica, Apple Color Emoji, Arial, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Light mode custom style */
+[data-bs-theme="light"] {
+  --bs-body-bg: var(--neutral-50); /* background body */
+  --bs-body-color: var(--neutral-900); /* text default */
+  --bs-primary: var(--orange-500); /* warna primary */
+  --bs-card-bg: var(--neutral-50); /* background card */
+  --bs-card-border-color: var(--neutral-200);
+}
+
+/* Dark mode custom style */
+[data-bs-theme="dark"] {
+  --bs-body-bg: var(--neutral-900);
+  --bs-body-color: var(--neutral-900);
+  --bs-primary: var(--orange-500);
+  --bs-card-bg: ;
+  --bs-card-border-color: var(--neutral-200) !important;
+}
+
+:root {
+  /* orange */
+  --orange-50: #fff2e6;
+  --orange-300: #ffa554;
+  --orange-500: #ff7900;
+  --primary: #ff7900;
+  --orange-700: #b55600;
+  --orange-900: #6b3300;
+  --orange: var(--orange-500);
+
+  /* neutral */
+  --neutral-50: #ffffff;
+  --neutral-100: #f5f7fa;
+  --neutral-200: #e6e9f0;
+  --neutral-300: #b7babd;
+  --neutral-400: #989b9f;
+  --neutral-500: #7a7c81;
+  --neutral-600: #5b5d63;
+  --neutral-900: #050506;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 30px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  border-radius: 30px;
+  background: #555;
+}
+
+.pagination {
+  margin-bottom: 0rem !important;
+}
+
+.modal-product {
+  .modal-dialog {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    .modal-content {
+      min-width: 53.125rem !important;
+    }
+  }
+}
+
+#nprogress .bar {
+  background: var(--orange-500);
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+}
+
+#nprogress .spinner {
+  display: none;
+}
